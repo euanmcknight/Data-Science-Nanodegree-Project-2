@@ -55,10 +55,10 @@ def save_data(df, database_filename):
     database_filename (str): File name for database to store data in
     
     Output:
-    saves data in database under "MessageCategories"
+    saves data in database under "df"
     '''
     engine = create_engine('sqlite:///{}'.format(database_filename))
-    df.to_sql('df', engine, index=False, if_exists='replace') 
+    df.to_sql('df', engine, index=False, if_exists='replace')  
 
 
 def main():
