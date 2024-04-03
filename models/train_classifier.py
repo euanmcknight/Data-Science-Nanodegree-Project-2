@@ -28,7 +28,7 @@ def load_data(database_filepath):
     category_names (list(str)): List of columns  
     '''
     engine = create_engine('sqlite:///{}'.format(database_filepath))
-    df = pd.read_sql_table('df',engine) # read in table
+    df = pd.read_sql_table('df',engine)
     X = df['message']
     Y = df.drop(['id', 'message', 'original', 'genre'], axis=1)
     category_names = list(Y.columns) 
