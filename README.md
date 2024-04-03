@@ -43,7 +43,6 @@ This project trains its model emergency text data supplied by Figure8 using an E
 - `data/disaster_categories.csv`: Disaster categories csv file
 - `data/disaster_messages.csv`: Disaster messages csv file
 - `models/train_classifier.py`: Python script with ML pipeline
-- `models/classifier.pkl`: Model storage file
 - `app/templates/`: HTML Templates used for the web app
 - `app/run.py`: Python script to launch web app
   
